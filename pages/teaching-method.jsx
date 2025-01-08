@@ -1,26 +1,8 @@
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import CTAButton from '../components/CTAButton'
-import { siteConfig } from '../utils/constants'
-
-const methodologyPoints = [
-  {
-    title: 'Междисциплинарный подход',
-    description: 'Изучение языка через призму истории, культуры и философии помогает ученикам лучше понимать контекст и развивать критическое мышление.',
-    icon: '🔄'
-  },
-  {
-    title: 'Исследовательская деятельность',
-    description: 'Развитие самостоятельного мышления через анализ текстов и работу с различными источниками информации.',
-    icon: '🔍'
-  },
-  {
-    title: 'Практическая направленность',
-    description: 'Все теоретические знания закрепляются на практике через выполнение реальных заданий и разбор экзаменационных материалов.',
-    icon: '✍️'
-  }
-]
+import CTASection from '../components/CTASection'
+import { siteConfig, methodologyPoints } from '../utils/constants'
 
 const skills = [
   {
@@ -150,22 +132,11 @@ export default function TeachingMethod() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 bg-primary text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Хотите узнать больше о методике?
-            </h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto">
-              Запишитесь на пробное занятие и увидите мой подход к обучению на практике
-            </p>
-            <CTAButton 
-              text="Записаться на пробное занятие" 
-              isWhatsApp={true}
-              className="bg-white text-primary hover:bg-gray-100"
-            />
-          </div>
-        </section>
+        <CTASection 
+          title="Хотите узнать больше о методике?"
+          description="Запишитесь на пробное занятие и увидите мой подход к обучению на практике"
+        />
+
       </main>
 
       <Footer />

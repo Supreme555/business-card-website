@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Head from 'next/head'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
-import CTAButton from '../components/CTAButton'
+import CTASection from '../components/CTASection'
 import { siteConfig, faq } from '../utils/constants'
 
 const examTips = [
@@ -197,22 +197,11 @@ export default function Resources() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 bg-primary text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Остались вопросы?
-            </h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto">
-              Запишитесь на пробное занятие, и я отвечу на все ваши вопросы
-            </p>
-            <CTAButton 
-              text="Записаться на пробное занятие" 
-              isWhatsApp={true}
-              className="bg-white text-primary hover:bg-gray-100"
-            />
-          </div>
-        </section>
+        <CTASection 
+          title="Остались вопросы?"
+          description="Запишитесь на пробное занятие, и я отвечу на все ваши вопросы"
+        />
+
       </main>
 
       <Footer />

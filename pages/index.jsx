@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import CTAButton from '../components/CTAButton'
+import CTASection from '../components/CTASection'
 import { siteConfig, teachingExperience, services } from '../utils/constants'
 
 export default function Home() {
@@ -97,6 +98,12 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        <CTASection 
+          title="Готовы начать обучение?"
+          description="Запишитесь на пробное занятие и сделайте первый шаг к успешному освоению русского языка"
+        />
+
       </main>
 
       <Footer />

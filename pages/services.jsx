@@ -3,6 +3,7 @@ import Header from '../components/Header'
 import Footer from '../components/Footer'
 import CTAButton from '../components/CTAButton'
 import { siteConfig, services } from '../utils/constants'
+import CTASection from '../components/CTASection'
 
 const coursePricing = [
   {
@@ -191,22 +192,11 @@ export default function Services() {
           </div>
         </section>
 
-        {/* CTA Section */}
-        <section className="py-16 bg-primary text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-heading font-bold mb-6">
-              Готовы начать обучение?
-            </h2>
-            <p className="text-lg mb-8 max-w-2xl mx-auto">
-              Запишитесь на пробное занятие со скидкой 50% и убедитесь в эффективности моей методики
-            </p>
-            <CTAButton 
-              text="Записаться на пробное занятие" 
-              isWhatsApp={true}
-              className="bg-white text-primary hover:bg-gray-100"
-            />
-          </div>
-        </section>
+        <CTASection 
+          title="Готовы начать обучение?"
+          description="Запишитесь на пробное занятие со скидкой 50% и убедитесь в эффективности моей методики"
+        />
+
       </main>
 
       <Footer />
