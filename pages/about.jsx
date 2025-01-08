@@ -88,7 +88,7 @@ export default function About() {
             <div className="max-w-4xl mx-auto">
               <div className="bg-beige-50 rounded-lg p-8">
                 {teachingExperience.certificates.map((cert, index) => (
-                  <div key={index} className="flex items-center mb-4 last:mb-0">
+                  <div key={index} className="flex items-start mb-4 last:mb-0">
                     <svg className="w-6 h-6 text-primary-600 mr-3 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
                     </svg>
