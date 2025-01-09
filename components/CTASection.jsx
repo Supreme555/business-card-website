@@ -9,7 +9,7 @@ export default function CTASection({
   return (
     <section className={`relative py-24 overflow-hidden ${className}`}>
       {/* Градиентный фон */}
-      <div className="absolute inset-0 bg-gradient-to-br from-primary-600 to-primary-800"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-[#D2B48C] to-[#8B7355]"></div>
       
       {/* Декоративные элементы */}
       <div className="absolute inset-0 opacity-10">
@@ -28,7 +28,7 @@ export default function CTASection({
           <CTAButton 
             text={buttonText}
             isWhatsApp={true}
-            className="bg-beige-50 text-primary-600 hover:scale-105 transform transition-all duration-200 shadow-lg hover:shadow-xl text-lg px-8 py-4 border-2 border-white/20"
+           className="text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300"
           />
         </div>
       </div>

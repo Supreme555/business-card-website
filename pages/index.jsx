@@ -19,8 +19,8 @@ export default function Home() {
       <main>
         {/* Hero Section */}
         <section className="relative bg-white pt-24 pb-32">
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#E3F2FD_0%,_transparent_35%)]"></div>
-          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_#E3F2FD_0%,_transparent_35%)]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,_#D2B48C_0%,_transparent_35%)]"></div>
+          <div className="absolute inset-0 bg-[radial-gradient(circle_at_bottom_left,_#D2B48C_0%,_transparent_35%)]"></div>
           <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-8">
@@ -40,7 +40,7 @@ export default function Home() {
         </section>
 
         {/* Services Section */}
-        <section className="py-24">
+        <section className="py-24 bg-[#D2B48C]/5">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-3xl font-bold text-gray-900">Направления подготовки</h2>
@@ -53,7 +53,7 @@ export default function Home() {
               {services?.map((service, index) => (
                 <div
                   key={index}
-                  className="group relative bg-white p-8 rounded-2xl border border-gray-100 hover:border-primary-100 transition-all duration-300"
+                  className="group relative bg-white p-8 rounded-2xl border border-[#D2B48C]/20 hover:border-[#D2B48C]/50 transition-all duration-300"
                 >
                   <div className="mb-6 text-3xl">{service.icon || '📚'}</div>
                   <h3 className="text-xl font-semibold text-gray-900 mb-3">
@@ -64,13 +64,13 @@ export default function Home() {
                   </p>
                   <div className="space-y-2 text-sm text-gray-500">
                     <p className="flex items-center">
-                      <svg className="w-4 h-4 text-primary-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-[#D2B48C] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       {service.duration}
                     </p>
                     <p className="flex items-center">
-                      <svg className="w-4 h-4 text-primary-600 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <svg className="w-4 h-4 text-[#D2B48C] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                       </svg>
                       {service.price}
@@ -84,7 +84,7 @@ export default function Home() {
 
         <CTASection 
           title="Готовы начать обучение?"
-          description="Запишитесь на пробное занятие со скидкой 50%"
+          description="Первое пробное занятие длительностью 40 минут – со скидкой 50%!"
         />
       </main>
 
