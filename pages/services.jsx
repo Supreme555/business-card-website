@@ -8,7 +8,7 @@ import CTASection from '../components/CTASection'
 const coursePricing = [
   {
     name: 'Пробное занятие',
-    price: '3,000 ₸',
+    price: '5,000 ₸',
     duration: '40 минут',
     description: 'Знакомство с методикой преподавания и определение уровня ученика',
     features: [
@@ -20,8 +20,8 @@ const coursePricing = [
   },
   {
     name: 'Индивидуальное занятие',
-    price: '8,000 ₸',
-    duration: '90 минут',
+    price: '10,000 ₸',
+    duration: '60 минут',
     description: 'Персональное занятие с учетом уровня и целей ученика',
     features: [
       'Индивидуальная программа',
@@ -32,11 +32,11 @@ const coursePricing = [
   },
   {
     name: 'Блок из 8 занятий',
-    price: '60,000 ₸',
-    duration: '90 минут каждое',
+    price: '70,000 ₸',
+    duration: '60 минут каждое',
     description: 'Оптимальный вариант для регулярных занятий',
     features: [
-      'Экономия 7,500 ₸',
+      'Экономия 10,000 ₸',
       'Гибкий график',
       'Полное методическое сопровождение',
       'Регулярная обратная связь'
@@ -63,7 +63,7 @@ export default function Services() {
             </h1>
             <p className="text-lg text-gray-600 text-center max-w-3xl mx-auto">
               Индивидуальные занятия по русскому языку и литературе для учеников 7-12 классов.
-              Подготовка к ЕНТ и IB DP экзаменам.
+              Подготовка к ЕНТ и IB DP экзаменам (русский язык и литература).
             </p>
           </div>
         </section>
@@ -164,7 +164,7 @@ export default function Services() {
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                     <div>
-                      <span className="font-bold">Длительность 90 минут</span>
+                      <span className="font-bold">Длительность 60 минут</span>
                       <p className="text-gray-600">Оптимальное время для усвоения материала</p>
                     </div>
                   </li>

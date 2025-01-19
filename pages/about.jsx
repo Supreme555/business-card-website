@@ -24,14 +24,14 @@ export default function About() {
                 Преподаватель русского языка и литературы
               </h1>
               <p className="text-xl text-gray-700">
-                {teachingExperience.experience} опыта преподавания и подготовки учеников к экзаменам
+                с 20-летним опытом преподавания и репетиторства
               </p>
             </div>
 
             <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
               <div className="relative h-[500px] rounded-lg overflow-hidden shadow-xl">
                 <Image
-                  src="/images/profile.jpg"
+                  src="/images/aksana-foto.jpeg"
                   alt="Аксана Сарсенова"
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -44,13 +44,13 @@ export default function About() {
                 <h2 className="text-3xl font-bold text-gray-900 mb-6">Аксана Сарсенова</h2>
                 <div className="space-y-4 text-lg text-gray-700">
                   <p>
-                    Я преподаватель с {teachingExperience.experience} стажем, выпускница {teachingExperience.education}.
+                    Я учитель {teachingExperience.experience}, выпускница {teachingExperience.education}.
                   </p>
                   <p>
                     {teachingExperience.mission}
                   </p>
                   <p>
-                    Работаю с учениками {teachingExperience.targetAudience}.
+                    {teachingExperience.targetAudience}.
                   </p>
                 </div>
               </div>

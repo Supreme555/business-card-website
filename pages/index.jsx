@@ -15,7 +15,7 @@ export default function Home() {
       </Head>
 
       <Header />
-      
+
       <main>
         {/* Hero Section */}
         <section className="relative bg-white pt-24 pb-32">
@@ -28,9 +28,9 @@ export default function Home() {
                 <span className="block">языка и литературы</span>
               </h1>
               <p className="max-w-2xl mx-auto text-xl text-gray-600 mb-12">
-                Развиваю аналитические и коммуникативные навыки старшеклассников через глубокий анализ текстов
+                Развиваю аналитические и коммуникативные навыки старшеклассников через различные методы обучения
               </p>
-              <CTAButton 
+              <CTAButton
                 text="Записаться на пробное занятие"
                 isWhatsApp={true}
                 className="text-lg px-8 py-4 shadow-lg hover:shadow-xl transition-all duration-300"
@@ -82,7 +82,7 @@ export default function Home() {
           </div>
         </section>
 
-        <CTASection 
+        <CTASection
           title="Готовы начать обучение?"
           description="Первое пробное занятие длительностью 40 минут – со скидкой 50%!"
         />
